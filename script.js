@@ -24,6 +24,7 @@ window.addEventListener('click', function(e){
 function CloseModal(){
 	Modal.classList.add("popup-anim-close");
 	setTimeout(CloseModalComplete, 360);
+	history.pushState(null, null, "/");
 }
 
 function CloseModalComplete(){
@@ -85,7 +86,7 @@ function ModalPlasmovoice(){
 }
 
 function ModalHistory(){
-	ModalContent.innerHTML = '<div class = "flexbox history"><h2>1 Сезон</h2> <span class = "info-history">25.09.2021 - 1.16.5</span> <button>Скачать карту</button></div> <div class = "flexbox history"><h2>2 Сезон</h2> <span class = "info-history">01.12.2021 - 1.16.5</span><button>Скачать карту</button></div>';
+	ModalContent.innerHTML = '<div class = "flexbox history"><h2>1 Сезон</h2> <span class = "info-history">25.09.2021 - 1.16.5</span> <a href = "https://drive.google.com/uc?export=download&id=1fvt-3xF-XH2H3ajxGu25K30eygWN7Xr2"><button>Скачать карту</button></a></div> <div class = "flexbox history"><h2>2 Сезон</h2> <span class = "info-history">01.12.2021 - 1.16.5</span><a href="https://drive.google.com/uc?export=download&id=11-rmihQbqtSqgmj3nDDxV2fMpB25ZnZb"><button>Скачать карту</button></a></div> <a href="https://drive.google.com/file/d/1KbXZDlluLVhnoQXkBYDBI9e_FRnSAI_E/view?usp=sharing" class = "instruct">Инструкция</a>';
 }
 
 function ModalPremium(){
@@ -118,7 +119,6 @@ function OpenMobMenu(){
 	CheckMobMenuClicks();
 }
 function CloseMobMenu(){
-	history.pushState(null, null, "/");
 	Mobmenu.classList.add("mob-closing");
 	setTimeout(function(){Mobmenu.style.display = "none"; Mobmenu.classList.remove("mob-closing");}, 550);
 }

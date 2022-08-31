@@ -170,9 +170,64 @@ p{
 	background-color: #ff0000;
 	transform: scale(1.1);
 }
+/*FAQ*/
+details{
+  background-color: #303030;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+summary {
+	cursor: pointer;
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+details[open] div{
+  padding: .5em 1em;
+  margin-left: 15px;
+}
 
 
+.instruct{
+	margin: 0 auto;
+	color: gray;
+	text-align: center;
+}
+.instruct:hover{
+	color: black;
+}
 /*DIVS*/
+.faq-div{
+	padding: 25px;
+	background-color: #18bb4a;
+	color: white;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .footer{
 	background-color: #23272A;
 	color: white;
@@ -629,7 +684,7 @@ left: 50%;
 	text-align: center;
 }
 .buy-btn{
-	width: 100%;
+	width: 50%;
 	color: white;
 	   background: rgb(32,0,56);
 background: linear-gradient(90deg, rgba(32,0,56,1) 0%, rgba(255,35,35,1) 71%, rgba(32,0,56,1) 100%);
@@ -653,4 +708,7 @@ background: linear-gradient(90deg, rgba(32,0,56,1) 0%, rgba(255,35,35,1) 71%, rg
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.slide_content > p{
+	padding: 15px;
 }
