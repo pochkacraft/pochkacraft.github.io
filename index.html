@@ -1,6 +1,160 @@
+<!DOCTYPE html>
 <html>
-  <head><title>POCHKACRAFT</title></head>
-  <body>
-    <center><h1>WEBSITE IN DEVELOPMENT</h1></center>
-  </body>
-</html
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PochkaCraft</title>
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="media.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class="nav-div">
+	<nav>
+		<a onclick="OpenModal(); ModalHistory();">История</a><span>|</span>
+		<a href = "">Pochka Premium</a><span> | </span>
+		<a onclick="OpenModal(); ModalPlasmovoice();">PlasmoVoice</a><span> | </span>
+		<a href = "https://discord.gg/rCD7xhpYrg">Discord</a><span> | </span>
+		<a href = "" class="disabled">Карта сервера</a>
+	</nav>
+	</div>
+
+	<div class="mobile-menu-container">
+		<div class="mobile-menu mobmenuOpen">
+			<ul>
+				<li><a onclick="OpenModal(); ModalHistory();" class="mobile-menu-link">История</a></li>
+				<li><a href="" class="mobile-menu-link">Pochka Premium</a></li>
+				<li><a  onclick="OpenModal(); ModalPlasmovoice();" class="mobile-menu-link">PlasmoVoice</a></li>
+				<li><a href="https://discord.gg/rCD7xhpYrg" class="mobile-menu-link">Discord</a></li>
+				<li><a href="" class="mobile-menu-link">Карта сервера</a></li>
+			</ul>
+		</div>
+		<div class="mobile-menu-btn">
+			<button onclick ="OpenMobMenu()" class="mob-menu"><div></div><div></div><div></div></button>
+		</div>
+
+	</div>
+
+	<header class="profile">
+		<div class="ava">
+			<img src="img/ava.png" width="110px">
+		</div>
+		<h1 class="megatitle">PochkaCraft</h1>
+		<div class="ip-container">
+		<div class="ip">
+			<span>pochkacraft.com</span>
+			<button class="copy-btn" onclick=" CopyToClipboard() "><img src="img/copy.png" width="30px"></button>
+		</div>
+		</div>
+	</header>
+	<div class="about-profile">
+		<h2 class="h2"><span class="red">Бесплатный</span> и приватный сервер в майнкрафт, который <span class="orange">идеально тебе подойдет</span></h2>
+		<div class="head-btns">
+		<a href="#tostart"><button class="start-btn"><div class="flexbox gap-1"><img src="img/play.png" width="24px">Начать играть</button></a>
+		<a href="https://discord.gg/rCD7xhpYrg"><button class="ds"><div class="flexbox gap-1"><img src="img/ds.png" width="24px"> Наш дискорд</div></button></a>
+		</div>
+	</div>
+
+	<div class="about-div">
+		<h1 class="block-title">О нас</h1>
+		<div class="flexbox jc-center">
+		<p class="left-p">
+		У нас отсутствуют бесконечные донатные привилегии, реклама на пол экрана о скидках и дурацкие плагины которые портят атмосферу. Доступ по анкете обеспечивает защиту от читеров и гриферов.
+		</p>
+		<video class = "sticker" src="img/sticker_1.webm" autoplay="true" loop width="300px">
+
+		</video>
+		</div>
+	</div>
+
+	<div class="start-div" id="tostart">
+		<h1 class="block-title">Начать играть</h1>
+		<div class="flexbox jc-center">
+		<p class="left-p">
+		Чтобы начать играть на нашем сервере вам нужно всего напросто <a href="#">заполнить анкету</a> в нашем дискорде. Дело 5 минут! Наша администрация быстро проверит анкету и выдаст вам <span class="red">вечный доступ</span> на PochkaCraft
+	<button class="anketa-btn">Заполнить анкету</button>
+		</p>
+		<video class = "sticker" src="img/sticker_3.webm" autoplay="true" loop width="300px">
+
+		</video>
+	</div>
+
+	</div>
+
+
+
+
+
+	<div class="modal-back">
+		<div class="modal-container">
+			<div class="modal">
+				<div class="close-modal popup-close-anim"><button class="close-btn" onclick="CloseModal()">✖</button></div>
+				<div class="modal-content">
+
+
+				<div class="loading">
+				<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+				</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<div class="modal-message-container msg-anim">
+<div class="modal-message">
+	<div class="message-content">
+		IP адрес сервера скопирован!
+	</div>
+	<div class="close-msg-btn">
+			<button onclick="CloseMessage();">Закрыть</button>
+		</div>
+		<div class="msg-progress">
+			<div class="msg-progress-bar"></div>
+		</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="footer-flex">
+	<div>
+		<ul>
+			<li>aaas</li>
+		</ul>
+		<ul>
+			<li>asdasdasd</li>
+		</ul>
+		<ul>
+			<li>sadasdas</li>
+		</ul>
+	</div>
+
+	<div>
+		<ul>
+			<li>dsfsdfsdfsd</li>
+		</ul>
+		<ul>
+			<li>asdasdas</li>
+		</ul>
+		<ul>
+			<li>asdasdas</li>
+		</ul>
+	</div>
+	</div>
+	<div class="info">
+		Made by KeRas1n
+	</div>
+
+</div>
+	<footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</footer>
+</body>
+</html>
