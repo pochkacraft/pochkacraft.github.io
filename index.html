@@ -7,6 +7,7 @@
 
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="media.css">
+	<link rel="stylesheet" type="text/css" href="splide.min.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,7 @@
 	<div class="nav-div">
 	<nav>
 		<a onclick="OpenModal(); ModalHistory();">История</a><span>|</span>
-		<a href = "">Pochka Premium</a><span> | </span>
+		<a href = "#premium">Pochka Premium</a><span> | </span>
 		<a onclick="OpenModal(); ModalPlasmovoice();">PlasmoVoice</a><span> | </span>
 		<a href = "https://discord.gg/rCD7xhpYrg">Discord</a><span> | </span>
 		<a href = "" class="disabled">Карта сервера</a>
@@ -28,7 +29,7 @@
 		<div class="mobile-menu mobmenuOpen">
 			<ul>
 				<li><a onclick="OpenModal(); ModalHistory();" class="mobile-menu-link">История</a></li>
-				<li><a href="" class="mobile-menu-link">Pochka Premium</a></li>
+				<li><a href="#premium" class="mobile-menu-link">Pochka Premium</a></li>
 				<li><a  onclick="OpenModal(); ModalPlasmovoice();" class="mobile-menu-link">PlasmoVoice</a></li>
 				<li><a href="https://discord.gg/rCD7xhpYrg" class="mobile-menu-link">Discord</a></li>
 				<li><a href="" class="mobile-menu-link">Карта сервера</a></li>
@@ -86,9 +87,57 @@
 
 	</div>
 
+	<div class="premium-div" id="premium">
+		<h1 class="block-title premium-title">Pochka Premium</h1>
+		<h2 class="premium-title">Поддержите существование сервера и получите фичи и бонусы</h2>
 
+		<div class="splide">
+  		<div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide first_slide">
+					<div class="slide_content">
+						<img src="img/logo.png" width="300px">
+						<p>
+						Особые приветствия и прощания
+						</p>
+					</div>
+				</li>
+				<li class="splide__slide second_slide">
+					<div class="slide_content">
+						<img src="img/logo.png" width="300px">
+						<p>
+						ник в игре и в дискорде
+						</p>
+					</div>
+				</li>
+				<li class="splide__slide third_slide">
+					<div class="slide_content">
+						<img src="img/logo.png" width="300px">
+						<p>
+						поддержка сервера и обеспечение
+						</p>
+					</div>
+				</li>
+				<li class="splide__slide fourth_slide">
+					<div class="slide_content">
+						<img src="img/logo.png" width="300px">
+						<p>
+						доступ к какому то визуальному плагину который не оч влияет на игру
+						</p>
+					</div>
+				</li>
+			</ul>
+  		</div>
+	</div>
+	<div class="buy-premium">
+		<button class="buy-btn" onclick="OpenModal(); ModalPremium();">Купить за 1.5$/месяц</button>
+		<div class="cena-info">
+		≈55 UAH
 
+		</div>
+	</div>
 
+</div>
 
 	<div class="modal-back">
 		<div class="modal-container">
@@ -97,9 +146,11 @@
 				<div class="modal-content">
 
 
+
+<!--
 				<div class="loading">
 				<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-				</div>
+				</div> -->
 
 				</div>
 
@@ -125,29 +176,30 @@
 	<div class="footer-flex">
 	<div>
 		<ul>
-			<li>aaas</li>
+			<li><a href="#">Мы на мониторингах</a></li>
 		</ul>
 		<ul>
-			<li>asdasdasd</li>
+			<li><a href="https://keras1n.github.io/pochkacraft.github.io">Наш старый сайт</a></li>
 		</ul>
 		<ul>
-			<li>sadasdas</li>
+			<li><a href="#premium">Pochka Premium</a></li>
 		</ul>
 	</div>
 
 	<div>
 		<ul>
-			<li>dsfsdfsdfsd</li>
+			<li><a href="#">Заполнить анкету</a></li>
 		</ul>
 		<ul>
-			<li>asdasdas</li>
+			<li><a href="#">Онлайн карта сервера</a></li>
 		</ul>
 		<ul>
-			<li>asdasdas</li>
+			<li><a href="https://discord.gg/rCD7xhpYrg">Наш дискорд</a></li>
 		</ul>
 	</div>
 	</div>
 	<div class="info">
+		<img src="img/logo.png" width="200px"><br>
 		Made by KeRas1n
 	</div>
 
@@ -155,6 +207,8 @@
 	<footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script src="script.js"></script>
+		<script src="splide.min.js"></script>
+		<script src="slider.js"></script>
 	</footer>
 </body>
 </html>

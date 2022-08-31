@@ -30,6 +30,10 @@ function CloseModalComplete(){
 	Modal.classList.remove("popup-anim-close");
 	Modal.classList.remove("popup-anim");
 	BackModal.style.display = "none";
+
+	Modal.style.background = "none";
+	Modal.style.backgroundColor = "white";
+	Modal.style.color = "black";
 }
 
 
@@ -72,6 +76,7 @@ $('.nav-div').css('-webkit-backdrop-filter','none');*/
 });
 
 /*MODAL CONTENT*/
+var Modal = document.querySelector('.modal');
 var ModalContent = document.querySelector('.modal-content');
 
 function ModalPlasmovoice(){
@@ -81,6 +86,15 @@ function ModalPlasmovoice(){
 
 function ModalHistory(){
 	ModalContent.innerHTML = '<div class = "flexbox history"><h2>1 Сезон</h2> <span class = "info-history">25.09.2021 - 1.16.5</span> <button>Скачать карту</button></div> <div class = "flexbox history"><h2>2 Сезон</h2> <span class = "info-history">01.12.2021 - 1.16.5</span><button>Скачать карту</button></div>';
+}
+
+function ModalPremium(){
+	Modal.style.background = "rgb(123,31,193)";
+	Modal.style.background = "linear-gradient(90deg, rgba(123,31,193,1) 0%, rgba(255,23,23,1) 100%)";
+	Modal.style.color = "white";
+
+
+	ModalContent.innerHTML = '<div class="ModalPremium"><h1>Поддержите сервер и получите Pochka Premium</h1><h2>1,5$ ≈ 55 UAH</h2><div class="flexbox choose-payment"><button class="card"><img src="img/donatepay_logo.png" width="200px"></button><button class="card"><img src="img/logo-diaka.png"></button><h4>Все отправленые средства рассматриваються как пожертвования. Возврат средств не предоставляется. </h4></div></div>';
 }
 
 /*MOB*/
