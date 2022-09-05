@@ -51,7 +51,7 @@ var ProgressBar = document.querySelector('.msg-progress-bar');
 
 function OpenMessage(){
 	Msg.style.display = "block";
-	setTimeout(CloseMessage, 5000);
+	setTimeout(CloseMessage, 3000);
 	ProgressBar.classList.add("progress-loaded");
 
 }
@@ -95,7 +95,7 @@ function ModalPremium(){
 	Modal.style.color = "white";
 
 
-	ModalContent.innerHTML = '<div class="ModalPremium"><h1>Поддержите сервер и получите Pochka Premium</h1><h2>1,5$ ≈ 55 UAH</h2><div class="flexbox choose-payment"><button class="card"><img src="img/donatepay_logo.png" width="200px"></button><button class="card"><img src="img/logo-diaka.png"></button><h4>Все отправленые средства рассматриваються как пожертвования. Возврат средств не предоставляется. </h4></div></div>';
+	ModalContent.innerHTML = '<div class="ModalPremium"><h1>Поддержите сервер и получите <span class = "gradient-title">Pochka Premium</span></h1><h2>1,5$ ≈ 55 UAH</h2><div class="flexbox choose-payment"><a href="https://new.donatepay.ru/@pochka-craft"><button class="card"><img src="img/donatepay_logo.png" width="200px"></button></a><a href="https://pochkacraft.diaka.ua/donate"><button class="card"><img src="img/logo-diaka.png"></button></a><h4>Все отправленые средства рассматриваються как пожертвования. Возврат средств не предоставляется. </h4></div></div>';
 }
 
 /*MOB*/

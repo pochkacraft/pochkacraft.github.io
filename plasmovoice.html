@@ -3,11 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>PochkaCraft</title>
+	<title>PochkaCraft - Приватный сервер Minecraft</title>
+	<meta name="description" content="Скачать Plasmovoice для голосового чата на приватном сервере PochkaCraft.">
 
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="media.css">
-	<link rel="stylesheet" type="text/css" href="splide.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/splide.min.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +32,7 @@
 				<li><a onclick="OpenModal(); ModalHistory();" class="mobile-menu-link">История</a></li>
 				<li><a href="#premium" class="mobile-menu-link">Pochka Premium</a></li>
 				<li><a  onclick="OpenModal(); ModalPlasmovoice();" class="mobile-menu-link">PlasmoVoice</a></li>
-				<li><a href="https://discord.gg/rCD7xhpYrg" class="mobile-menu-link">Discord</a></li>
+				<li><a href="#faq" class="mobile-menu-link">FAQ</a></li>
 				<li><a href="" class="mobile-menu-link">Карта сервера</a></li>
 			</ul>
 		</div>
@@ -132,7 +133,7 @@
   		</div>
 	</div>
 	<div class="buy-premium">
-		<button class="buy-btn" onclick="OpenModal(); ModalPremium();">Купить за 1.5$/месяц</button>
+		<button class="buy-btn" onclick="OpenModal(); ModalPremium();">Получить за 1.5$/месяц</button>
 		<div class="cena-info">
 		≈55 UAH
 
@@ -146,30 +147,37 @@
 		<div class="flexbox jc-center">
 		<video class = "sticker" src="img/sticker_2.webm" autoplay="true" muted  loop width="300px"></video>
 		<details>
-		  <summary>Нужна лицензия для игры?</summary>
+		  <summary>Нужна ли лицензия для игры?</summary>
 		  <div>
-		 Нет, для игры на сервере лицензия не нужна.
+		 Нет, для игры на сервере лицензия не нужна!
 		  </div>
 		</details>
 		<details>
 		  <summary>Можно играть с телефона?</summary>
 		  <div>
-		 К сожалению пока что нет. Сервер работает только на Java Edition.
+		 К сожалению пока что нет(😒 Сервер работает только на Java Edition.
 		  </div>
 		</details>
 		<details>
 		  <summary>Как включить войс чат?</summary>
 		  <div>
-		 Для этого необходимо просто <a href="/plasmovoice">установить мод.</a>
+		 Для этого необходимо <a href="/plasmovoice">установить мод</a> в папку "mods" в директории .minecraft, после чего зайти через forge/fabric клиент. По нажатию <i>left alt</i> включается голосовой чат, для его настройки нажмите  <i>V</i>
+		  </div>
+		</details>
+		<details>
+		  <summary>Сколько будет длиться сезон?</summary>
+		  <div>
+		 Как минимум пол года, но следите за новостями😏
 		  </div>
 		</details>
 	</div>
+	<h2 class="center">Остались вопросы? Задай их в <div><a href="https://discord.gg/3DHjWq689e"><span class="ds-ch">#📢админ-поддержка📢</span></a></h2></div>
 
 	</div>
 
 	<div class="modal-back" style = "display:block;">
 		<div class="modal-container">
-			<div class="modal" style = "display:block;">
+			<div class="modal">
 				<div class="close-modal popup-close-anim"><button class="close-btn" onclick="CloseModal()">✖</button></div>
 				<div class="modal-content">
 
@@ -186,9 +194,6 @@
 	<div class="message-content">
 		IP адрес сервера скопирован!
 	</div>
-	<div class="close-msg-btn">
-			<button onclick="CloseMessage();">Закрыть</button>
-		</div>
 		<div class="msg-progress">
 			<div class="msg-progress-bar"></div>
 		</div>
@@ -199,31 +204,34 @@
 	<div class="footer-flex">
 	<div>
 		<ul>
+			<li><a href="/rules">Правила сервера</a></li>
+
 			<li><a href="#">Мы на мониторингах</a></li>
-		</ul>
-		<ul>
+
 			<li><a href="https://keras1n.github.io/pochkacraft.github.io">Наш старый сайт</a></li>
-		</ul>
-		<ul>
+
 			<li><a href="#premium">Pochka Premium</a></li>
+
 		</ul>
 	</div>
 
 	<div>
 		<ul>
 			<li><a href="#">Заполнить анкету</a></li>
-		</ul>
-		<ul>
+
 			<li><a href="#">Онлайн карта сервера</a></li>
-		</ul>
-		<ul>
+
 			<li><a href="https://discord.gg/rCD7xhpYrg">Наш дискорд</a></li>
+
+			<li><a href="#premium">Pochka Premium</a></li>
 		</ul>
 	</div>
 	</div>
 	<div class="info">
 		<img src="img/logo.png" width="200px"><br>
-		Made by KeRas1n
+		<div>Made by KeRas1n</div>
+		<div>We are in no way affiliated with or endorsed by Mojang, AB.</div>
+		<div>Вся размещенная информация на сайте не является публичной офертой.</div>
 	</div>
 </div>
 	<footer>
