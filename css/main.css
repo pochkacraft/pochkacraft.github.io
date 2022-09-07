@@ -590,6 +590,9 @@ background: linear-gradient(90deg, rgba(255,188,188,1) 0%, rgba(145,94,184,1) 10
 	justify-content: center;
 	gap: 20px;
 }
+.plasmo > div{
+	text-align: center;
+}
 .history{
 	justify-content: space-between;
 	gap: 20px;
