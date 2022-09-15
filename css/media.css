@@ -31,4 +31,9 @@
 	right: 20px;
 	position: absolute;
 	}
+
+	/*DIVS*/
+	.profile, .about-profile, .about-div, .start-div, .premium-div, .faq-div, .footer{
+		width: 100%;
+	}
 }
