@@ -21,10 +21,10 @@
 <body>
 	<div class="nav-div">
 	<nav>
-		<a onclick="OpenModal(); ModalHistory();">История</a><span>|</span>
-		<a href = "#premium">Pochka Premium</a><span> | </span>
-		<a onclick="OpenModal(); ModalPlasmovoice();">PlasmoVoice</a><span> | </span>
-		<a href = "#faq">FAQ</a><span> | </span>
+		<a href="#">Главная</a>
+		<a href = "#premium">Pochka Premium</a>
+		<a onclick="OpenModal(); ModalPlasmovoice();">PlasmoVoice</a>
+		<a href = "#faq">FAQ</a>
 		<a href = "" class="disabled">Карта сервера</a>
 	</nav>
 	</div>
@@ -32,10 +32,10 @@
 	<div class="mobile-menu-container">
 		<div class="mobile-menu mobmenuOpen">
 			<ul>
-				<li><a onclick="OpenModal(); ModalHistory();" class="mobile-menu-link">История</a></li>
-				<li><a href="#premium" class="mobile-menu-link">Pochka Premium</a></li>
-				<li><a  onclick="OpenModal(); ModalPlasmovoice();" class="mobile-menu-link">PlasmoVoice</a></li>
-				<li><a href="#faq" class="mobile-menu-link">FAQ</a></li>
+				<li><a href="#" class="mobile-menu-link" onclick="CloseMobMenu()">Главная</a></li>
+				<li><a href = "#premium" class="mobile-menu-link" onclick="CloseMobMenu()">Pochka Premium</a></li>
+				<li><a onclick="OpenModal(); ModalPlasmovoice(); CloseMobMenu();" class="mobile-menu-link">PlasmoVoice</a></li>
+				<li><a href="#faq" class="mobile-menu-link" onclick="CloseMobMenu()">FAQ</a></li>
 				<li><a href="" class="mobile-menu-link">Карта сервера</a></li>
 			</ul>
 		</div>
@@ -63,7 +63,7 @@
 		<h2 class="h2"><span class="red">Бесплатный</span> и приватный сервер в майнкрафт, который <span class="orange">идеально тебе подойдет</span></h2>
 		<div class="head-btns">
 		<a href="#tostart"><button class="start-btn"><div class="flexbox gap-1"><img src="img/play.png" width="24px">Начать играть</button></a>
-		<a href="https://discord.gg/rCD7xhpYrg"><button class="ds"><div class="flexbox gap-1"><img src="img/ds.png" width="24px"> Наш дискорд</div></button></a>
+		<a href="https://discord.gg/rCD7xhpYrg" target="_blank"><button class="ds"><div class="flexbox gap-1"><img src="img/ds.png" width="24px"> Наш дискорд</div></button></a>
 		</div>
 	</div>
 
@@ -83,8 +83,8 @@
 		<h1 class="block-title">Начать играть</h1>
 		<div class="flexbox jc-center">
 		<p class="left-p">
-		Чтобы начать играть на нашем сервере вам нужно всего напросто <a href="#">заполнить анкету</a> в нашем дискорде. Дело 5 минут! Наша администрация быстро проверит анкету и выдаст вам <span class="red">вечный доступ</span> на PochkaCraft
-	<button class="anketa-btn">Заполнить анкету</button>
+		Чтобы начать играть на нашем сервере вам нужно всего напросто <a target="_blank" href="https://discord.gg/rCD7xhpYrg">заполнить анкету</a> в нашем дискорде. Дело 5 минут! Наша администрация быстро проверит анкету и выдаст вам <span class="red">вечный доступ</span> на PochkaCraft
+		<button class="anketa-btn" onClick="parent.open('https://discord.gg/rCD7xhpYrg')">Заполнить анкету</button>
 		</p>
 		<video class = "sticker" src="img/sticker_3.webm" autoplay="true" muted  loop width="300px">
 
@@ -148,33 +148,37 @@
 <div class="faq-div" id="faq">
 		<h1 class="block-title">Ответы на часто задаваемые вопросы</h1>
 		<div class="flexbox jc-center">
-		<video class = "sticker" src="img/sticker_2.webm" autoplay="true" muted  loop width="300px"></video>
+		<div class="faq-sticker-div"><video class = "sticker" src="img/sticker_2.webm" autoplay="true" muted  loop width="300px"></video></div>
 		<details>
-		  <summary>Нужна ли лицензия для игры?</summary>
+		  <summary>🧐Нужна ли лицензия для игры?</summary>
 		  <div>
-		 Нет, для игры на сервере лицензия не нужна!
+		 Нет, для игры на сервере лицензия не нужна!😎
 		  </div>
 		</details>
 		<details>
-		  <summary>Можно играть с телефона?</summary>
+		  <summary>📱Можно играть с телефона?</summary>
 		  <div>
 		 К сожалению пока что нет(😒 Сервер работает только на Java Edition.
 		  </div>
 		</details>
 		<details>
-		  <summary>Как включить войс чат?</summary>
+		  <summary>🔊Как включить войс чат?</summary>
 		  <div>
-		 Для этого необходимо <a href="/plasmovoice">установить мод</a> в папку "mods" в директории .minecraft, после чего зайти через forge/fabric клиент. По нажатию <i>left alt</i> включается голосовой чат, для его настройки нажмите  <i>V</i>
+		 Для этого необходимо <a onclick="OpenModal(); ModalPlasmovoice();">установить мод</a> в папку "mods" в директории .minecraft, после чего зайти через forge/fabric клиент. По нажатию <i>left alt</i> включается голосовой чат, для его настройки нажмите  <i>V</i>
 		  </div>
 		</details>
 		<details>
-		  <summary>Сколько будет длиться сезон?</summary>
+		  <summary>⌛Сколько будет длиться сезон?</summary>
 		  <div>
 		 Как минимум пол года, но следите за новостями😏
 		  </div>
 		</details>
+		<details >
+			<summary >❓Где найти карты предыдущих сезонов?</summary>
+			<div id="123">Их можно скачать <a onclick="OpenModal(); ModalHistory();">тут</a></div>
+		</details>
 	</div>
-	<h2 class="center">Остались вопросы? Задай их в <div><a href="https://discord.gg/3DHjWq689e"><span class="ds-ch">#📢админ-поддержка📢</span></a></h2></div>
+	<h2 class="center">Остались вопросы? Задай их в <div><a target="_blank" href="https://discord.gg/3DHjWq689e"><span class="ds-ch">#📢админ-поддержка📢</span></a></h2></div>
 
 	</div>
 
@@ -209,27 +213,30 @@
 </div>
 
 <div class="footer">
+	<div class="footer-socials">
+		<a href="https://discord.gg/rCD7xhpYrg" target="_blank" class="social-link"><img src="img/ds.png" height="20px"></a>
+	</div>
 	<div class="footer-flex">
 	<div>
 		<ul>
-			<li><a href="/rules">Правила сервера</a></li>
+			<li><a href="/docs/rules">Правила сервера</a></li>
 
-			<li><a href="#">Мы на мониторингах</a></li>
+			<li><a href="/docs">База знаний</a></li>
+
+			<li><a href="/docs">Мы на мониторингах</a></li>
 
 			<li><a href="https://keras1n.github.io/pochkacraft.github.io">Наш старый сайт</a></li>
-
-			<li><a href="#premium">Pochka Premium</a></li>
 
 		</ul>
 	</div>
 
 	<div>
 		<ul>
-			<li><a href="#">Заполнить анкету</a></li>
+			<li><a href="https://discord.gg/rCD7xhpYrg">Заполнить анкету</a></li>
 
 			<li><a href="#">Онлайн карта сервера</a></li>
 
-			<li><a href="https://discord.gg/rCD7xhpYrg">Наш дискорд</a></li>
+			<li><a href="https://discord.gg/rCD7xhpYrg" target="_blank">Наш дискорд</a></li>
 
 			<li><a href="#premium">Pochka Premium</a></li>
 		</ul>

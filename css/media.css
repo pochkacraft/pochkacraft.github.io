@@ -27,4 +27,8 @@
 	.article{
 		width: 90%;
 	}
+	.footer-socials{
+	right: 20px;
+	position: absolute;
+	}
 }

@@ -1,6 +1,8 @@
 *{
 	padding: 0;
 	margin: 0;
+
+	box-sizing: border-box;
 }
 body{
 	font-family: 'Montserrat', sans-serif;
@@ -56,10 +58,10 @@ nav{
 	position: fixed;
 	top: 10px;
 	left: 50%;
-  	transform: translateX(-50%);
+  transform: translateX(-50%);
 	display: flex;
 	justify-content: center;
-	gap: 20px;
+	gap: 50px;
 	font-size: 18px;
 }
 nav > a{
@@ -86,7 +88,7 @@ nav > span{
 	z-index: 800;
 	transition: .6s;
 	width: 100%;
-	height: 30px;
+	height: 60px;
 	padding: 10px;
 	position: fixed;
 	top: 0px;
@@ -186,7 +188,10 @@ summary {
   justify-content: space-between;
   transition: height 1s ease;
 }
-
+details>div>a{
+	color: white;
+	text-decoration: underline;
+}
 summary::-webkit-details-marker {
   display: none;
 }
@@ -222,11 +227,14 @@ details summary {
 details[open] summary {
   margin-bottom: 10px;
 }
-
+.instruct-div{
+	margin-top: 30px;
+	width: 100%;
+	text-align: center;
+}
 .instruct{
 	margin: 0 auto;
 	color: gray;
-	text-align: center;
 }
 .instruct:hover{
 	color: black;
@@ -240,7 +248,10 @@ details[open] summary {
 	margin-right: auto;
 	margin-left: auto;
 }
-
+.faq-sticker-div{
+	width: 100%;
+	text-align: center;
+}
 .footer{
 	background-color: #23272A;
 	color: white;
@@ -250,6 +261,7 @@ details[open] summary {
 	padding: 25px;
 }
 .footer-flex{
+	margin-top: 30px;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -263,6 +275,25 @@ details[open] summary {
 .footer-flex >div>ul>li{
 	margin-top: 20px;
 }
+.footer-flex >div>ul>li>a{
+	text-decoration: none;
+}
+.footer-socials{
+	right: 100px;
+	position: absolute;
+}
+.social-link{
+	padding: 5px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+}
+.social-link:hover{
+	background-color: #5d6062;
+}
+
+
+
 .info{
 	text-align: center;
 	margin-top: 40px;
@@ -417,7 +448,7 @@ background: linear-gradient(90deg, rgba(255,188,188,1) 0%, rgba(145,94,184,1) 10
 .mobmenuOpen{
 	animation-name: mobmenuOpen;
 	animation-duration: .6s;
-	animation-timing-function: ease-out;
+	animation-timing-function: ;
 
 }
 .mob-closing{
@@ -696,6 +727,8 @@ left: 50%;
 	color: #ff5100;
 }
 .mobile-menu{
+	height: 550px;
+
 	display: none;
 
 	background:rgba(255, 255, 255, 1);

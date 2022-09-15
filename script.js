@@ -81,12 +81,12 @@ var Modal = document.querySelector('.modal');
 var ModalContent = document.querySelector('.modal-content');
 
 function ModalPlasmovoice(){
-	ModalContent.innerHTML = '<div class = "flexbox plasmo"> <h1>Плагин для голосового чата</h1><div><h2>FORGE</h2> <a href = "files/plasmovoice-forge-1.19.1-1.2.19.jar"><button>Скачать</button></a></div> <div><h2>FABRIC</h2><a href = "files/plasmovoice-fabric-1.19.1-1.2.19.jar"><button>Скачать</button></a></div> </div>';
+	ModalContent.innerHTML = '<div class = "flexbox plasmo"> <h1>Плагин для голосового чата</h1><div><h2>FORGE</h2> <a href = "files/plasmovoice-forge-1.19.1-1.2.19.jar"><button>Скачать</button></a></div> <div><h2>FABRIC</h2><a href = "files/plasmovoice-fabric-1.19.1-1.2.19.jar"><button>Скачать</button></a></div> </div><div class = "instruct-div"><a href="#faq" class = "instruct" onclick="CloseModal()">Как установить?</a></div>';
 	history.pushState(null, null, "/plasmovoice");
 }
 
 function ModalHistory(){
-	ModalContent.innerHTML = '<div class = "flexbox history"><h2>1 Сезон</h2> <span class = "info-history">25.09.2021 - 1.16.5</span> <a href = "https://drive.google.com/uc?export=download&id=1fvt-3xF-XH2H3ajxGu25K30eygWN7Xr2"><button>Скачать карту</button></a></div> <div class = "flexbox history"><h2>2 Сезон</h2> <span class = "info-history">01.12.2021 - 1.16.5</span><a href="https://drive.google.com/uc?export=download&id=11-rmihQbqtSqgmj3nDDxV2fMpB25ZnZb"><button>Скачать карту</button></a></div> <a href="https://drive.google.com/file/d/1KbXZDlluLVhnoQXkBYDBI9e_FRnSAI_E/view?usp=sharing" class = "instruct">Инструкция</a>';
+	ModalContent.innerHTML = '<div class = "flexbox history"><h2>1 Сезон</h2> <span class = "info-history">25.09.2021 - 1.16.5</span> <a href = "https://drive.google.com/uc?export=download&id=1fvt-3xF-XH2H3ajxGu25K30eygWN7Xr2"><button>Скачать карту</button></a></div> <div class = "flexbox history"><h2>2 Сезон</h2> <span class = "info-history">01.12.2021 - 1.16.5</span><a href="https://drive.google.com/uc?export=download&id=11-rmihQbqtSqgmj3nDDxV2fMpB25ZnZb"><button>Скачать карту</button></a></div> <div class = "instruct-div"><a href="https://drive.google.com/file/d/1KbXZDlluLVhnoQXkBYDBI9e_FRnSAI_E/view?usp=sharing" class = "instruct">Инструкция</a></div>';
 }
 
 function ModalPremium(){
@@ -95,7 +95,7 @@ function ModalPremium(){
 	Modal.style.color = "white";
 
 
-	ModalContent.innerHTML = '<div class="ModalPremium"><h1>Поддержите сервер и получите <span class = "gradient-title">Pochka Premium</span></h1><h2>1,5$ ≈ 55 UAH</h2><div class="flexbox choose-payment"><a href="https://new.donatepay.ru/@pochka-craft"><button class="card"><img src="img/donatepay_logo.png" width="200px"></button></a><a href="https://pochkacraft.diaka.ua/donate"><button class="card"><img src="img/logo-diaka.png"></button></a><h4>Все отправленые средства рассматриваються как пожертвования. Возврат средств не предоставляется. </h4></div></div>';
+	ModalContent.innerHTML = '<div class="ModalPremium"><h1>Поддержите сервер и получите <span class = "gradient-title">Pochka Premium</span></h1><h2>1,5$ ≈ 55 UAH</h2><div class="flexbox choose-payment"><a href="https://new.donatepay.ru/@pochka-craft"><button class="card"><img src="img/donatepay_logo.png" width="200px" ></button></a><a href="https://donatello.to/pochkacraft"><button class="card"><img src="img/logo-donatello.svg" width="200px"></button></a><h4>Все отправленые средства рассматриваються как пожертвования. Возврат средств не предоставляется. </h4></div></div>';
 }
 
 /*MOB*/
