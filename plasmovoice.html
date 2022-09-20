@@ -18,7 +18,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onload="OpenModal(); ModalPlasmovoice();">
 	<div class="nav-div">
 	<nav>
 		<a href="#">Главная</a>
@@ -175,20 +175,29 @@
 		</details>
 		<details >
 			<summary >❓Где найти карты предыдущих сезонов?</summary>
-			<div id="123">Их можно скачать <a onclick="OpenModal(); ModalHistory();">тут</a></div>
+			<div>Их можно скачать <a onclick="OpenModal(); ModalHistory();">тут</a></div>
+		</details>
+		<details >
+			<summary >💲Что такое PochkaCoin?</summary>
+			<div>На данный момент мы тестируем эту систему. В дальнейшем за Почкакоин можно будет купить <a href="#premium">Pochka Premium</a>. Генерировать валюту можно будет просто играя на проекте.</div>
 		</details>
 	</div>
 	<h2 class="center">Остались вопросы? Задай их в <div><a target="_blank" href="https://discord.gg/3DHjWq689e"><span class="ds-ch">#📢админ-поддержка📢</span></a></h2></div>
 
 	</div>
 
-	<div class="modal-back" style = "display:block;">
+	<div class="modal-back">
 		<div class="modal-container">
 			<div class="modal">
 				<div class="close-modal popup-close-anim"><button class="close-btn" onclick="CloseModal()">✖</button></div>
 				<div class="modal-content">
 
-<div class = "flexbox plasmo"> <h1>Плагин для голосового чата</h1><div><h2>FORGE</h2> <a href = "files/plasmovoice-forge-1.19.1-1.2.19.jar"><button>Скачать</button></a></div> <div><h2>FABRIC</h2><a href = "files/plasmovoice-fabric-1.19.1-1.2.19.jar"><button>Скачать</button></a></div> </div>
+
+
+<!--
+				<div class="loading">
+				<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+				</div> -->
 
 				</div>
 

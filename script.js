@@ -81,12 +81,12 @@ var Modal = document.querySelector('.modal');
 var ModalContent = document.querySelector('.modal-content');
 
 function ModalPlasmovoice(){
-	ModalContent.innerHTML = '<div class = "flexbox plasmo"> <h1>Плагин для голосового чата</h1><div><h2>FORGE</h2> <a href = "files/plasmovoice-forge-1.19.1-1.2.19.jar"><button>Скачать</button></a></div> <div><h2>FABRIC</h2><a href = "files/plasmovoice-fabric-1.19.1-1.2.19.jar"><button>Скачать</button></a></div> </div><div class = "instruct-div"><a href="#faq" class = "instruct" onclick="CloseModal()">Как установить?</a></div>';
+	ModalContent.innerHTML = '<h1>Плагин для голосового чата</h1><div class = "flexbox plasmo"><div><h2>FORGE</h2> <a href = "files/plasmovoice-forge-1.19.1-1.2.19.jar"><button>Скачать</button></a></div> <div><h2>FABRIC</h2><a href = "files/plasmovoice-fabric-1.19.1-1.2.19.jar"><button>Скачать</button></a></div> </div><div class = "instruct-div"><a href="#faq" class = "instruct" onclick="CloseModal()">Как установить?</a></div>';
 	history.pushState(null, null, "/plasmovoice");
 }
 
 function ModalHistory(){
-	ModalContent.innerHTML = '<div class = "flexbox history"><h2>1 Сезон</h2> <span class = "info-history">25.09.2021 - 1.16.5</span> <a href = "https://drive.google.com/uc?export=download&id=1fvt-3xF-XH2H3ajxGu25K30eygWN7Xr2"><button>Скачать карту</button></a></div> <div class = "flexbox history"><h2>2 Сезон</h2> <span class = "info-history">01.12.2021 - 1.16.5</span><a href="https://drive.google.com/uc?export=download&id=11-rmihQbqtSqgmj3nDDxV2fMpB25ZnZb"><button>Скачать карту</button></a></div> <div class = "instruct-div"><a href="https://drive.google.com/file/d/1KbXZDlluLVhnoQXkBYDBI9e_FRnSAI_E/view?usp=sharing" class = "instruct">Инструкция</a></div>';
+	ModalContent.innerHTML = '<h1>Прошлые сезоны</h1><div class = "flexbox history"><h2>1 Сезон</h2> <span class = "info-history">25.09.2021 - 1.16.5</span> <a href = "https://drive.google.com/uc?export=download&id=1fvt-3xF-XH2H3ajxGu25K30eygWN7Xr2"><button>Скачать карту</button></a></div> <div class = "flexbox history"><h2>2 Сезон</h2> <span class = "info-history">01.12.2021 - 1.16.5</span><a href="https://drive.google.com/uc?export=download&id=11-rmihQbqtSqgmj3nDDxV2fMpB25ZnZb"><button>Скачать карту</button></a></div> <div class = "instruct-div"><a href="https://drive.google.com/file/d/1KbXZDlluLVhnoQXkBYDBI9e_FRnSAI_E/view?usp=sharing" class = "instruct">Инструкция</a></div>';
 }
 
 function ModalPremium(){
