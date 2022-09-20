@@ -1,3 +1,4 @@
 new Splide(".splide", {
-    type   : 'loop',
+    type   : 'loop', 
+
   }).mount();

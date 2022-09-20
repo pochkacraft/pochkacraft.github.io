@@ -819,7 +819,6 @@ background: linear-gradient(90deg, rgba(32,0,56,1) 0%, rgba(255,35,35,1) 71%, rg
 	margin-top: 55px;
 }
 .splide__slide{
-	box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 	height: 350px;
 }
 .slide_content{
@@ -829,6 +828,9 @@ background: linear-gradient(90deg, rgba(32,0,56,1) 0%, rgba(255,35,35,1) 71%, rg
 }
 .slide_content > p{
 	padding: 15px;
+}
+.slide_content > img{
+	
 }
 
 
