@@ -617,6 +617,9 @@ background: linear-gradient(90deg, rgba(255,188,188,1) 0%, rgba(145,94,184,1) 10
 
 
 /*modal-content*/
+.modal-content > h1{
+	margin-bottom: 35px;
+}
 .plasmo{
 	justify-content: center;
 	gap: 20px;
