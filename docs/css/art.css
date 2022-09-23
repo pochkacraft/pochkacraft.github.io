@@ -1,3 +1,6 @@
+html{
+	scroll-behavior: smooth;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -6,7 +9,13 @@ body{
 	background-color: #f3f3f3;
 	font-family: 'Montserrat', sans-serif;
 }
-
+a{
+	color:black;
+	transition:.2s;
+}
+a:hover{
+	color:#527cff;
+}
 .article{
 	margin-top: 80px;
 	margin-bottom: 80px;
@@ -70,4 +79,29 @@ h2{
 }
 .container > div{
 	margin-top: 25px;
+}
+.kurs{
+	text-align: center;
+}
+ul{
+	list-style: none;
+}
+.smiles-block{
+	background-color: #bababa;	
+	border-radius: 15px;
+	padding:15px;
+}
+.smiles-block >ul > li{
+	padding:5px;
+	border-radius: 15px;
+	border: 1px solid;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	gap:20px;
+}
+.smiles-block >ul > li > img{
+	width:40px;
 }
