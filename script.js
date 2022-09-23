@@ -39,7 +39,7 @@ function CloseModalComplete(){
 
 
 function CopyToClipboard() {
-  var copyText = "pochkacraft.com";
+  var copyText = "51.83.212.202:25564";
 
   navigator.clipboard.writeText(copyText);
 
